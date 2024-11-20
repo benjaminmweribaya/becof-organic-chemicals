@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
+import { processPayment } from '../utils/api';
 
 function Payment() {
     const [amount, setAmount] = useState('');
-    const handlePayment = () => {
-        if (!amount) return alert("Please enter an amount!");
-        // Simulate payment processing
-        alert(`Payment of $${amount} successful!`);
+    const [paymentStatus, setPaymentStatus] = useState(null);
+
+    const handlePayment = async () => {
+        try {
+            const response = await processPayment({ amount: 1000 }); // Replace with dynamic data
+            setPaymentStatus(response.data.status);
+        } catch (error) {
+            console.error('Error processing payment:', error);
+            setPaymentStatus('Error');
+        }
     };
 
     return (
@@ -26,6 +33,11 @@ function Payment() {
                 >
                     Pay Now
                 </button>
+                {paymentStatus && (
+                    <p className="mt-4">
+                        Payment Status: <span className="font-semibold">{paymentStatus}</span>
+                    </p>
+                )}
             </div>
         </div>
     );

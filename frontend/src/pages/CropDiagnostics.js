@@ -1,8 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { getWeatherData } from '../utils/api';
 
 function CropDiagnostics() {
     const [image, setImage] = useState(null);
     const [diagnosis, setDiagnosis] = useState('');
+    const [weather, setWeather] = useState(null);
+
+    useEffect(() => {
+        const fetchWeather = async () => {
+            try {
+                const location = 'Nairobi'; // Replace with dynamic location
+                const response = await getWeatherData(location);
+                setWeather(response.data);
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+            }
+        };
+
+        fetchWeather();
+    }, []);
 
     const handleImageUpload = (event) => {
         const file = event.target.files[0];
@@ -34,6 +50,14 @@ function CropDiagnostics() {
                 </button>
             </div>
             {diagnosis && <p className="mt-4 text-xl">{diagnosis}</p>}
+            {weather && (
+                <div className="mt-4 bg-green-100 p-4 rounded">
+                    <h2 className="text-lg font-semibold">Weather Forecast</h2>
+                    <p>Location: {weather.location}</p>
+                    <p>Temperature: {weather.temperature}°C</p>
+                    <p>Condition: {weather.condition}</p>
+                </div>
+            )}
         </div>
     );
 }
