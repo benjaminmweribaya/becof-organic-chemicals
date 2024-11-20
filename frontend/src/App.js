@@ -23,6 +23,7 @@ function App() {
                         <Route path="/crop-diagnostics" element={<CropDiagnostics />} />
                         <Route path="/educational-resources" element={<EducationalResources />} />
                         <Route path="/payment" element={<Payment />} />
+                        <Route path="about" element={<div>About Us</div>} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
