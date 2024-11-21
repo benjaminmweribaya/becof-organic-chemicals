@@ -1,8 +1,17 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const connectDB = require('./config/db');
 const resourcesRoute = require('./routes/resources');
 
+// Load environment variables
+dotenv.config();
+
+// Connect to the database
+connectDB();
+
+// Create the Express app
 const app = express();
 
 // Middleware
