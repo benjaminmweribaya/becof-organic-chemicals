@@ -22,7 +22,7 @@ export const diagnoseCrop = (imageData) => {
 
 // Function to fetch educational resources
 export const getEducationalResources = () => {
-    return api.get('/resources'); // Adjust endpoint if necessary
+    return api.get('/api/resources'); // Adjust endpoint if necessary
 };
 
 // Function to process payments
