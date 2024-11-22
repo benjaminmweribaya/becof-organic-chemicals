@@ -15,6 +15,10 @@ connectDB();
 const app = express();
 
 // Middleware
+const corsOptions = {
+    origin: ['http://localhost:3000', 'https://becof-web-app-backend.onrender.com'], // Replace with actual URLs
+    optionsSuccessStatus: 200,
+};
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
@@ -25,6 +29,17 @@ app.use('/api/resources', resourcesRoute);
 // Basic route
 app.get('/', (req, res) => {
     res.send('Becof Web App Backend is Running');
+});
+
+// Handle undefined routes
+app.use((req, res) => {
+    res.status(404).json({ message: 'Route not found' });
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ message: 'Something went wrong', error: err.message });
 });
 
 // Start the server
