@@ -9,6 +9,7 @@ import EducationalResources from './pages/EducationalResources';
 import About from './pages/About';
 import Careers from './pages/Careers'; // Add Career page
 import Consultation from './pages/Consultation'; // Add Consultation page
+import Contact from './pages/Contact';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/careers" element={<Careers />} />
                         <Route path="/consultation" element={<Consultation />} />
+                        <Route path="/contact" element={<Contact />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>

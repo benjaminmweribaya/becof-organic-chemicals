@@ -79,6 +79,9 @@ function Navbar() {
                                 <li className="p-2 hover:bg-gray-200">
                                     <Link to="/careers">Careers</Link>
                                 </li>
+                                <li className="p-2 hover:bg-gray-200">
+                                    <Link to="/educational-resources">Educational Resources</Link>
+                                </li>
                             </ul>
                         )}
                     </li>
