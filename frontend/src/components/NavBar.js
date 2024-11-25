@@ -57,6 +57,11 @@ function Navbar() {
                         <Link to="/educational-resources">Educational Resources</Link>
                     </li>
                     <li>
+                        <Link to="/marketplace" className="block py-2 px-4 hover:bg-green-700">
+                            Marketplace
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/about" className="block py-2 px-4 hover:bg-green-700">
                             About Us
                         </Link>
