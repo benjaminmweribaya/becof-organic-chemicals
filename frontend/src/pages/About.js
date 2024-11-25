@@ -39,7 +39,7 @@ function About() {
 
             {/* Card 3: Our Team */}
             <div className="bg-white shadow-lg rounded-lg p-6 col-span-1 md:col-span-2 lg:col-span-3">
-                <h2 className="text-2xl font-semibold text-green-600 mb-4">Our Team</h2>
+                <h2 className="text-2xl font-semibold text-green-600 mb-4">Management Team</h2>
                 <ul className="list-disc list-inside text-gray-700">
                     <li>Eng. Benjamin Mweri Baya (Chief Executive Officer)</li>
                     <li>Eng. Andrew Mogambi Onwenga (Chief Operations Officer)</li>
