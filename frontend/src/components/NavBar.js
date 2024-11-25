@@ -3,14 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
-
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
     };
 
     return (
@@ -52,38 +47,14 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
-                    <li className="relative">
-                        <button
-                            onClick={toggleDropdown}
-                            className="flex items-center space-x-1 py-2 px-4 hover:bg-green-700"
-                        >
-                            <span>Features</span>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                        </button>
-                        {isDropdownOpen && (
-                            <ul className="absolute bg-white text-black mt-2 w-48 rounded shadow-lg">
-                                <li className="p-2 hover:bg-gray-200">
-                                    <Link to="/consultation">Consultation</Link>
-                                </li>
-                                <li className="p-2 hover:bg-gray-200">
-                                    <Link to="/careers">Careers</Link>
-                                </li>
-                                <li className="p-2 hover:bg-gray-200">
-                                    <Link to="/educational-resources">Educational Resources</Link>
-                                </li>
-                            </ul>
-                        )}
+                    <li className="block py-2 px-4 hover:bg-green-700">
+                        <Link to="/consultation">Consultation</Link>
+                    </li>
+                    <li className="block py-2 px-4 hover:bg-green-700">
+                        <Link to="/careers">Careers</Link>
+                    </li>
+                    <li className="block py-2 px-4 hover:bg-green-700">
+                        <Link to="/educational-resources">Educational Resources</Link>
                     </li>
                     <li>
                         <Link to="/about" className="block py-2 px-4 hover:bg-green-700">
