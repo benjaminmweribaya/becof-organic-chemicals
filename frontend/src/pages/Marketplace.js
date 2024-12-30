@@ -3,6 +3,42 @@ import { getMarketplaceProducts } from '../utils/api';
 import Cart from '../components/Cart'; // Component for managing cart
 import ProductCard from '../components/ProductCard'; // Separate product card component
 
+const products = [
+  {
+    id: 1,
+    name: 'Becof HomeGuard 1Litre',
+    price: 2000,
+    description: 'Eco-friendly pesticide for home use.',
+    images: [
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325294/Photoroom-20240929_000147_k5idwe.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325294/Photoroom-20240929_001221_mu0vmn.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325294/Photoroom-20240929_001359_bvg6jv.png',
+    ],
+  },
+  {
+    id: 2,
+    name: 'Becof HomeGuard 500ml',
+    price: 1000,
+    description: 'Eco-friendly pesticide for small-scale use.',
+    images: [
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325285/Photoroom-20240929_002039_10_syjqvk.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325286/Photoroom-20240929_002040_11_uhsxrx.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325286/Photoroom-20240929_002040_12_x9awrm.png',
+    ],
+  },
+  {
+    id: 3,
+    name: 'Becof HomeGuard 250ml',
+    price: 500,
+    description: 'Eco-friendly pesticide for minimal usage.',
+    images: [
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325284/Photoroom-20240929_002040_13_dqlwgg.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325285/Photoroom-20240929_002041_14_kmdnkj.png',
+      'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325284/Photoroom-20240929_002041_15_pviejn.png',
+    ],
+  },
+];
+
 function Marketplace() {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
