@@ -1,0 +1,12 @@
+__pycache__/
+instance/
+../instance/
+.env
+server.env
+*.pyc
+*.pyo
+migrations/
+venv/
+.idea/
+.vscode/
+.DS_Store
