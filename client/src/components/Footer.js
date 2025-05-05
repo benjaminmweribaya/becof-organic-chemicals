@@ -55,6 +55,8 @@ function Footer() {
           <p className="text-sm">&copy; {new Date().getFullYear()} Becof Organic Chemicals Limited. All rights reserved.</p>
         </div>
 
+        <hr className="border-t border-white/30 w-2/3 mx-auto" />
+
         {/* CTA */}
         <div className="pt-6 text-sm">
           <p>
