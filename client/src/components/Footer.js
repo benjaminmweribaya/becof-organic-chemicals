@@ -65,7 +65,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="underline font-semibold hover:text-green-200"
             >
-              Contact Tevexa Technologies here
+              Contact TEVEXA here
             </a>
           </p>
         </div>
