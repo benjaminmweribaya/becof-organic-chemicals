@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Marketplace from './pages/Marketplace';
+import Products from './pages/Products';
 import NotFound from './pages/NotFound';
-import EducationalResources from './pages/EducationalResources';
 import About from './pages/About';
 import Careers from './pages/Careers'; 
 import Consultation from './pages/Consultation'; 
@@ -19,8 +18,7 @@ function App() {
                 <main className="flex-grow">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/marketplace" element={<Marketplace />} />
-                        <Route path="/educational-resources" element={<EducationalResources />} />
+                        <Route path="/products" element={<Products />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/careers" element={<Careers />} />
                         <Route path="/consultation" element={<Consultation />} />

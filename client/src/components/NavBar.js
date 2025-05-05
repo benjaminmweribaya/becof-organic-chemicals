@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/Logo.jpg';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,8 +13,9 @@ function Navbar() {
         <nav className="bg-green-600 text-white">
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
-                <Link to="/" className="text-xl font-bold">
-                    Becof Organic Chemicals
+                <Link to="/" className="flex items-center space-x-2">
+                    <img src={logo} alt="Becof Logo" className="h-12 w-auto" />
+                    <span className="text-xl font-bold">Becof Organic Chemicals Limited</span>
                 </Link>
 
                 {/* Mobile Menu Toggle */}
@@ -47,19 +49,16 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/products" className="block py-2 px-4 hover:bg-green-700">
+                            Products
+                        </Link>
+                    </li>
                     <li className="block py-2 px-4 hover:bg-green-700">
                         <Link to="/consultation">Consultation</Link>
                     </li>
                     <li className="block py-2 px-4 hover:bg-green-700">
                         <Link to="/careers">Careers</Link>
-                    </li>
-                    <li className="block py-2 px-4 hover:bg-green-700">
-                        <Link to="/educational-resources">Educational Resources</Link>
-                    </li>
-                    <li>
-                        <Link to="/marketplace" className="block py-2 px-4 hover:bg-green-700">
-                            Marketplace
-                        </Link>
                     </li>
                     <li>
                         <Link to="/about" className="block py-2 px-4 hover:bg-green-700">

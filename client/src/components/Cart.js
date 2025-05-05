@@ -15,12 +15,14 @@ function Cart({ cart }) {
                 className="border-b py-2 flex justify-between items-center"
               >
                 <span>{item.name}</span>
-                <span>${item.price}</span>
+                <span>KES {item.price.toLocaleString()}</span>
               </li>
             ))}
           </ul>
           <div className="mt-4">
-            <p className="font-bold">Total: ${total.toFixed(2)}</p>
+            <p className="font-bold text-lg">
+              Total: KES {total.toLocaleString()}
+            </p>
             <button className="bg-green-700 text-white px-6 py-2 rounded mt-2 hover:bg-green-600">
               Checkout
             </button>
