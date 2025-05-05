@@ -178,7 +178,7 @@ function About() {
                             alt="COO - Eng. Andrew Mogambi Onwenga"
                             className="w-40 h-40 rounded-full object-contain shadow-lg mb-4"
                         />
-                        <h3 className="text-xl font-bold text-green-700">Eng. Andrew Mogambi Onwenga</h3>
+                        <h3 className="text-xl font-bold text-green-700">Eng. Andrew Mogambi Omwenga</h3>
                         <p className="text-gray-600">Chief Operations Officer</p>
                     </div>
                 </div>
