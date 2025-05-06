@@ -10,7 +10,7 @@
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "formik": "^2.4.6",
-    "framer-motion": "^12.9.7",
+    "framer-motion": "^12.10.0",
     "http-proxy-middleware": "^3.0.3",
     "lucide-react": "^0.507.0",
     "postcss": "^8.4.49",
