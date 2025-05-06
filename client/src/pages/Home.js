@@ -91,7 +91,7 @@ function Home() {
           <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 m-4">
             <h3 className="text-xl font-bold text-green-700">Our Mission</h3>
             <p className="text-gray-700 mt-4">
-              To transform agriculture and the chemical industry by innovating and manufacturing a diverse range of eco-friendly chemical products that reduce environmental pollution, protect human health, and promote sustainable agricultural practices.
+              To innovate and manufacture a diverse range of eco-friendly chemical products that reduce environmental pollution, protect human health, and promote sustainable agricultural practices.
             </p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 m-4">
