@@ -105,7 +105,7 @@ function Products() {
   );
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto max-w-7xl p-6 pt-20 ">
       <h1 className="text-3xl font-bold text-green-700">Products</h1>
       <p className="text-gray-600">Browse and buy our eco-friendly products.</p>
 

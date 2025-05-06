@@ -13,7 +13,7 @@ import {
 
 const Careers = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 pt-20">
       {/* Header Section with animation */}
       <motion.header
         className="text-center bg-green-600 text-white py-10 rounded-xl"
@@ -75,7 +75,7 @@ const Careers = () => {
         <h2 className="text-3xl font-semibold text-center mb-8">
           Career Growth & Development
         </h2>
-        <div className="bg-green-100 p-6 rounded-xl shadow max-w-4xl mx-auto">
+        <div className="bg-green-100 p-6 rounded-xl shadow max-w-7xl mx-auto">
           <ul className="list-disc list-inside space-y-3 text-lg">
             <li>Workshops, certifications, and continuous learning initiatives.</li>
             <li>Leadership pipeline to nurture high-potential employees.</li>
@@ -123,7 +123,7 @@ const Careers = () => {
       >
         <Smile className="mx-auto text-green-600 mb-4" size={40} />
         <h2 className="text-3xl font-semibold">Life at Becof</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg">
+        <p className="mt-4 max-w-7xl mx-auto text-lg">
           At Becof, we celebrate diversity, nurture innovation, and support one another like family. 
           Our people are our greatest asset, and we believe in growing together while making a meaningful difference.
         </p>

@@ -68,7 +68,7 @@ function Home() {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <div className="container mx-auto px-6 py-8">
+    <div className="container mx-auto max-w-7xl px-6 py-8 pt-20">
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center rounded-lg shadow-md h-[80vh] flex items-center justify-center text-white"
@@ -189,7 +189,7 @@ function Home() {
 
       {/* Awards Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-12">
             Awards & Recognition
           </h2>

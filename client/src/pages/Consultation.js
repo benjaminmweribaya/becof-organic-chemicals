@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Consultation = () => {
     return (
-        <div className="container mx-auto px-4 py-10 max-w-7xl">
+        <div className="container mx-auto px-4 py-10 max-w-7xl pt-20">
             {/* Header Section with animation */}
             <motion.header
                 className="text-center bg-gradient-to-r from-green-700 to-lime-600 text-white py-10 px-6 rounded-2xl shadow-lg"
@@ -15,7 +15,7 @@ const Consultation = () => {
                 <h1 className="text-4xl font-extrabold tracking-tight">
                     Expert Guidance for a Sustainable Future
                 </h1>
-                <p className="mt-4 text-xl max-w-2xl mx-auto">
+                <p className="mt-4 text-xl max-w-7xl mx-auto">
                     Personalized advice for farmers, cooperatives, and chemical manufacturers.
                 </p>
             </motion.header>

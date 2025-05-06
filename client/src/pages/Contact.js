@@ -17,7 +17,7 @@ function Contact() {
     });
 
     return (
-        <div className="container mx-auto px-6 py-8 max-w-5xl">
+        <div className="container mx-auto px-6 py-8 max-w-7xl pt-20">
             <section className="text-center">
                 <h1 className="text-4xl font-bold text-green-700">Contact Us</h1>
                 <p className="text-lg text-gray-600 mt-4">
