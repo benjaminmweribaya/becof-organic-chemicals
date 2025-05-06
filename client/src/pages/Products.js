@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { getMarketplaceProducts } from '../utils/api';
 import Cart from '../components/Cart';
 import ProductCard from '../components/ProductCard';
+import { Leaf, Bug } from 'lucide-react';
 
 const staticProducts = [
   {
     id: 0,
     name: 'Becof AgroShield 250ml',
     price: 500,
-    description: 'Agriculture Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
+    description: 'Agricultural Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
     images: [
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325286/Photoroom-20240929_002039_8_l6a3r4.png',
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325287/Photoroom-20240929_002038_7_c2cpo6.png',
@@ -19,7 +20,7 @@ const staticProducts = [
     id: 1,
     name: 'Becof AgroShield 1L',
     price: 2000,
-    description: 'Agriculture Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
+    description: 'Agricultural Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
     images: [
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325292/Photoroom-20240929_001457_jqc1zj.png',
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325289/Photoroom-20240929_002036_2_gijscs.png',
@@ -30,7 +31,7 @@ const staticProducts = [
     id: 2,
     name: 'Becof AgroShield 500ml',
     price: 1000,
-    description: 'Agriculture Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
+    description: 'Agricultural Plant-Based Insecticide. It is safe, effective, and environmentally friendly. Best for Vegetables.',
     images: [
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325291/Photoroom-20240929_002037_3_zm1u1p.png',
       'https://res.cloudinary.com/ddjrmxirc/image/upload/v1735325289/Photoroom-20240929_002037_5_ovvaml.png',
@@ -106,7 +107,46 @@ function Products() {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold text-green-700">Products</h1>
-      <p className="text-gray-600">Browse and buy eco-friendly products.</p>
+      <p className="text-gray-600">Browse and buy our eco-friendly products.</p>
+
+      {/* 🌿 FEATURES SECTION - NEW ADDITION */}
+      <div className="grid gap-6 md:grid-cols-2 my-6">
+        {/* Biofertilizers Card */}
+        <div className="bg-white border shadow-lg rounded-xl p-6 hover:shadow-xl transition">
+          <div className="flex items-center gap-3 mb-4">
+            <Leaf className="text-green-600" />
+            <h2 className="text-2xl font-semibold text-green-800">Biofertilizers</h2>
+          </div>
+          <p className="text-gray-700 mb-2">
+            Our microorganism-enriched biofertilizers are derived from food waste, making them completely natural and sustainable.
+          </p>
+          <ul className="list-disc ml-5 text-gray-600 space-y-1">
+            <li>Enhance microbial activity in the soil</li>
+            <li>Restore essential nutrients for better crop growth</li>
+            <li>Improve soil fertility and long-term productivity</li>
+            <li>100% biodegradable with zero chemical residues</li>
+            <li>Affordable and safe for all types of farming</li>
+          </ul>
+        </div>
+
+        {/* Biopesticides Card */}
+        <div className="bg-white border shadow-lg rounded-xl p-6 hover:shadow-xl transition">
+          <div className="flex items-center gap-3 mb-4">
+            <Bug className="text-red-500" />
+            <h2 className="text-2xl font-semibold text-red-700">Biopesticides</h2>
+          </div>
+          <p className="text-gray-700 mb-2">
+            Our plant-extract-based biopesticides provide powerful protection while remaining eco-safe.
+          </p>
+          <ul className="list-disc ml-5 text-gray-600 space-y-1">
+            <li>Natural pest control without harmful chemicals</li>
+            <li>No toxic residues on crops</li>
+            <li>Targets a broad range of insects and pests</li>
+            <li>Safe for humans, animals, and pollinators</li>
+            <li>Biodegradable and environmentally friendly</li>
+          </ul>
+        </div>
+      </div>
 
       {/* Search Bar */}
       <div className="mt-4">

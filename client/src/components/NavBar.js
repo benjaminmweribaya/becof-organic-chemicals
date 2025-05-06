@@ -15,7 +15,7 @@ function Navbar() {
                 {/* Logo */}
                 <Link to="/" className="flex items-center space-x-2">
                     <img src={logo} alt="Becof Logo" className="h-12 w-auto" />
-                    <span className="text-xl font-bold">Becof Organic Chemicals Limited</span>
+                    <span className="text-xl font-bold">Becof Organic Chemicals</span>
                 </Link>
 
                 {/* Mobile Menu Toggle */}

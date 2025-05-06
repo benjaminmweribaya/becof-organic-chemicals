@@ -3,11 +3,9 @@ import CEOImage from '../assets/CEO.png';
 import COOImage from '../assets/COO.jpg';
 import { CheckCircle, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import DTPImage from '../assets/DTP.jpg';
-import FFABadgeImage from '../assets/FFA-Academy-Badge.jpg';
 import FFA2023GroupImage from '../assets/FFA2023-Group.jpg';
 import FFACertificateImage from '../assets/FFACertificate.jpg';
 import KENIATeamKilifi1Image from '../assets/KENIA-TEAM-KILIFI1.jpg';
-import KENIATeamKilifi2Image from '../assets/KENIA-TEAM-KILIFI2.jpg';
 import KENIATeamKilifi3Image from '../assets/KENIA-TEAM-KILIFI3.jpg';
 import KENIATeamKilifi4Image from '../assets/KENIA-TEAM-KILIFI4.jpg';
 import KIW2023Image from '../assets/KIW2023.jpg';
@@ -16,11 +14,9 @@ import NITF1Image from '../assets/NITF1.png';
 import NITF2Image from '../assets/NITF2.jpg';
 import NITF3Image from '../assets/NITF3.jpg';
 import NITF4Image from '../assets/NITF4.jpg';
-import NITF5Image from '../assets/NITF5.jpg';
 import NITF6Image from '../assets/NITF6.jpg';
 import PIAGroupImage from '../assets/PIA-Group.jpg';
 import PIAReceivingPlaqueImage from '../assets/PIA-Receiving-Plaque.jpg';
-import PIAShowcaseBadgeImage from '../assets/PIAShowcasebadge.jpg';
 import ShakinghandsImage1 from '../assets/Shaking-hands-with-pres1.jpg';
 import ShakinghandsImage2 from '../assets/Shaking-hands-with-pres2.jpg';
 import ShakinghandsImage3 from '../assets/Shaking-hands-with-pres3.jpg';
@@ -80,10 +76,10 @@ const principles = [
 ];
 
 const galleryImages = [
-    DTPImage, FFABadgeImage, FFA2023GroupImage, FFACertificateImage,
-    KENIATeamKilifi1Image, KENIATeamKilifi2Image, KENIATeamKilifi3Image, KENIATeamKilifi4Image,
-    KIW2023Image, MISImage, NITF1Image, NITF2Image, NITF3Image, NITF4Image, NITF5Image, NITF6Image,
-    PIAGroupImage, PIAReceivingPlaqueImage, PIAShowcaseBadgeImage,
+    DTPImage, FFA2023GroupImage, FFACertificateImage,
+    KENIATeamKilifi1Image, KENIATeamKilifi3Image, KENIATeamKilifi4Image,
+    KIW2023Image, MISImage, NITF1Image, NITF2Image, NITF3Image, NITF4Image, NITF6Image,
+    PIAGroupImage, PIAReceivingPlaqueImage,
     ShakinghandsImage1, ShakinghandsImage2, ShakinghandsImage3, ShakinghandsImage4, StatehouseImage2
 ];
 
