@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Statehouse from '../assets/Statehouse.jpg';
+import PIAGoup from '../assets/PIA-Group.jpg';
 import NationNews from '../assets/NationNews.jpg';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -66,21 +67,45 @@ const awards = [
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+  const images = [Statehouse, PIAGoup];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Image slideshow effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="container mx-auto max-w-7xl px-6 py-8 pt-20">
-      {/* Hero Section */}
-      <section
-        className="relative bg-cover bg-center rounded-lg shadow-md h-[80vh] flex items-center justify-center text-white"
-        style={{ backgroundImage: `url(${Statehouse})` }}
-      >
-        <div className="bg-black bg-opacity-50 p-8 rounded-lg flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl md:text-5xl font-bold">
-            Welcome to Becof Organic Chemicals Limited
-          </h1>
-          <p className="text-lg items-center md:text-xl mt-4">
-            Saving Lives Through Sustainable Agricultural Solutions
-          </p>
+      {/* Hero Section with Slideshow Background */}
+      <section className="relative h-[80vh] rounded-lg overflow-hidden shadow-md">
+        {/* Slideshow background images */}
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+            style={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          ></div>
+        ))}
+
+        {/* Overlay content */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-8 text-center text-white">
+          <div className="rounded-lg">
+            <h1 className="text-4xl md:text-5xl font-bold">
+              Welcome to Becof Organic Chemicals Limited
+            </h1>
+            <p className="text-lg md:text-xl mt-4">
+              Saving Lives Through Sustainable Agricultural Solutions
+            </p>
+          </div>
         </div>
       </section>
 
