@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import CEOImage from '../assets/CEO.png';
 import COOImage from '../assets/COO.jpg';
 import { CheckCircle, X, ChevronLeft, ChevronRight } from 'lucide-react';
-import DTPImage from '../assets/DTP.jpg';
-import FFA2023GroupImage from '../assets/FFA2023-Group.jpg';
 import FFACertificateImage from '../assets/FFACertificate.jpg';
 import KENIATeamKilifi1Image from '../assets/KENIA-TEAM-KILIFI1.jpg';
 import KENIATeamKilifi3Image from '../assets/KENIA-TEAM-KILIFI3.jpg';
@@ -15,13 +13,11 @@ import NITF2Image from '../assets/NITF2.jpg';
 import NITF3Image from '../assets/NITF3.jpg';
 import NITF4Image from '../assets/NITF4.jpg';
 import NITF6Image from '../assets/NITF6.jpg';
-import PIAGroupImage from '../assets/PIA-Group.jpg';
 import PIAReceivingPlaqueImage from '../assets/PIA-Receiving-Plaque.jpg';
 import ShakinghandsImage1 from '../assets/Shaking-hands-with-pres1.jpg';
 import ShakinghandsImage2 from '../assets/Shaking-hands-with-pres2.jpg';
 import ShakinghandsImage3 from '../assets/Shaking-hands-with-pres3.jpg';
 import ShakinghandsImage4 from '../assets/Shaking-hands-with-pres4.jpg';
-import StatehouseImage2 from '../assets/statehouse2.jpg';
 
 
 const coreValues = [
@@ -76,11 +72,10 @@ const principles = [
 ];
 
 const galleryImages = [
-    DTPImage, FFA2023GroupImage, FFACertificateImage,
+    FFACertificateImage,
     KENIATeamKilifi1Image, KENIATeamKilifi3Image, KENIATeamKilifi4Image,
-    KIW2023Image, MISImage, NITF1Image, NITF2Image, NITF3Image, NITF4Image, NITF6Image,
-    PIAGroupImage, PIAReceivingPlaqueImage,
-    ShakinghandsImage1, ShakinghandsImage2, ShakinghandsImage3, ShakinghandsImage4, StatehouseImage2
+    KIW2023Image, MISImage, NITF1Image, NITF2Image, NITF3Image, NITF4Image, NITF6Image, PIAReceivingPlaqueImage,
+    ShakinghandsImage1, ShakinghandsImage2, ShakinghandsImage3, ShakinghandsImage4
 ];
 
 function About() {
