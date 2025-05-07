@@ -76,7 +76,7 @@ function Home() {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="container mx-auto max-w-7xl px-6 py-8 pt-20">
